@@ -1,0 +1,138 @@
+ :root{
+    --backgColor: rgba(12, 12, 12, 0.637);
+}
+
+body{margin: 0px;
+}
+video{
+    position: fixed;
+}
+#div1{
+    position: fixed;
+    background-color:var(--backgColor);
+}
+
+.nav{
+    display: block;
+    }
+    li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    font-size:25px;
+    }
+    
+    a:link{
+    color: #fff;
+    text-decoration: none;
+    }
+    a:hover {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(253, 167, 7);
+    }
+    li > ul {
+    display: none;
+    }
+    li:hover ul {
+     display: block;
+     position: absolute;
+     left:10px;
+     background-color:rgb(21, 21, 22);
+     margin-top:0px;
+     padding: 5px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.705);
+     font-size: 25px;
+    
+    }
+    li:hover ul li a:link{display: block;
+        margin-left:-30px;
+    }
+
+.container{
+ display: grid;
+ grid-template-areas: "ob1 ob1 ob1"
+                      "ob2 ob3 ob4"
+                      "ob2 ob5 ob6"
+                      "ob7 ob7 ob7";
+ grid-column-gap: 40px;
+ grid-row-gap: 20px;
+}
+.class1{
+    display: grid;
+    color: orange;
+    background-color: var(--backgColor);
+    font-family: serif;
+    border-radius: 10px;
+    padding: 50px;
+    padding-bottom: 10px;
+    margin: 20px;
+    margin-top: 1px;
+    font-size: 30px;
+    grid-area: ob1;
+}
+.marq{color: rgb(216, 216, 61);}
+.class2{
+    grid-area: ob2;
+    background-color: rgba(17, 14, 202, 0.548);
+    padding: 20px;
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+}
+.class3{
+    grid-area: ob3;
+}
+.class4{
+    grid-area: ob4;
+}
+.class5{
+    grid-area: ob5;
+}
+.class6{
+    grid-area: ob6;
+}
+.class3,.class4,.class5,.class6,.class7{
+    font-size:40px;
+    padding: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-weight: 700;
+    color: white; 
+    background-color: rgba(211, 69, 17, 0.671);  
+}
+.class7{
+    grid-area: ob7;
+    margin-top: 50px;
+    background-color: rgba(17, 211, 82, 0.671);
+}
+.class3,.class4,.class5,.class6{
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(30, 171, 196, 0.527);
+}
+.param{
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+
+.inp1{
+    background-color: rgb(7, 6, 6);
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+  }
+  fieldset{
+   background-color: rgba(40, 226, 124, 0.616);
+   font-weight: 500;
+   font-size: 30px;
+    margin: 300px; 
+   margin-top: 40px;
+   margin-left: 30%;
+   border-radius: 35px;
+  }
